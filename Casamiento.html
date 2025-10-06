@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mili & Franco - Nuestro Casamiento</title>
+    <link rel="icon" type="image/jpeg" href="public/WhatsApp Image 2025-10-05 at 20.56.23.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base elegante */
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            /* Added fabric texture background that tiles across entire page */
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 400px 400px;
+        }
+
+        /* Títulos */
+        .font-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+        }
+
+        /* Botones */
+        .font-button {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        
+        
+        /* Decorative shadow overlay - botanical shadows like palm leaves */
+        .shadow-overlay {
+            position: relative;
+        }
+        
+        .shadow-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: contain;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body class="bg-[#f7f0e2] text-[#f9fafb]">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center shadow-overlay relative px-4">
+        <div class="text-center w-full">
+            <div class="bg-[#3b6255] text-stone-100 p-6 sm:p-12 md:p-20 lg:p-32 max-w-4xl mx-auto shadow-2xl">
+                <div class="space-y-6 sm:space-y-8 md:space-y-12">
+                    <div class="text-center">
+                        <h1 class="font-title text-3xl sm:text-4xl md:text-5xl tracking-widest uppercase text-[#f9fafb]">Mili & Franco</h1>
+                        <p class="text-base sm:text-lg md:text-xl tracking-wider mt-3 opacity-80 mt-6 sm:mt-8 md:mt-12">Nuestro Casamiento</p>
+                    </div>
+                    
+                    <div class="text-center py-8 sm:py-12 md:py-16">
+                        <div class="font-title text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-wider">
+                            <span>07</span>
+                            <span class="mx-3 sm:mx-4 md:mx-6">02</span>
+                            <span>26</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 sm:w-20 md:w-24 h-px bg-stone-400 mx-auto mb-4 sm:mb-6"></div>
+                        <p class="text-base sm:text-lg tracking-widest uppercase opacity-80">Sábado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ceremony Section -->
+    <section class="bg-[#3b6255] text-stone-100 py-12 sm:py-16 md:py-24">
+        <div class="max-w-lg mx-auto text-center px-6 sm:px-8">
+            <h2 class="font-title text-3xl sm:text-4xl tracking-widest uppercase mb-8 sm:mb-12">Fiesta</h2>
+            <div class="space-y-2 sm:space-y-3 leading-relaxed opacity-90 text-base sm:text-lg">
+                <p>Sábado 07 de Febrero en La Herencia</p>
+                <p>Saravi 1799, La Lonja, Provincia de Buenos Aires</p>
+            </div>
+            <a href="https://www.google.com/maps/dir//-1909,,+Saravi+1799,+La+Lonja,+Provincia+de+Buenos+Aires/@-34.4491271,-58.9226892,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bc9c181d17a319:0x90573af4ed1ba01e!2m2!1d-58.8402966!2d-34.449159?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+            class="mt-6 sm:mt-8 bg-[#065f46] text-[#f9fafb] px-8 sm:px-12 py-2.5 sm:py-3 text-sm font-button hover:bg-[#b8860b] hover:text-[#1f2937] transition-all duration-500 inline-block">
+                Ubicación
+            </a>
+            <p class="mt-4 sm:mt-6 text-sm sm:text-base opacity-70">Vestimenta Formal, Elegante</p>
+        </div>
+    </section>
+
+    <section class="py-12 sm:py-16 md:py-24 shadow-overlay">
+        <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 md:px-8">
+            <h2 class="font-title text-[#b8860b] text-3xl sm:text-4xl tracking-widest uppercase mb-8 sm:mb-12">Cuenta Regresiva</h2>
+            <div>
+                <div id="countdown" class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
+                    <div class="text-center">
+                        <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#b8860b]" id="days">0</div>
+                        <div class="text-xs sm:text-sm md:text-base uppercase tracking-wider mt-1 sm:mt-2 text-[#4a4a4a]">Días</div>
+                    </div>
+                    <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#4a4a4a] hidden sm:block">:</div>
+                    <div class="text-center">
+                        <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#b8860b]" id="hours">0</div>
+                        <div class="text-xs sm:text-sm md:text-base uppercase tracking-wider mt-1 sm:mt-2 text-[#4a4a4a]">Horas</div>
+                    </div>
+                    <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#4a4a4a] hidden sm:block">:</div>
+                    <div class="text-center">
+                        <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#b8860b]" id="minutes">0</div>
+                        <div class="text-xs sm:text-sm md:text-base uppercase tracking-wider mt-1 sm:mt-2 text-[#4a4a4a]">Minutos</div>
+                    </div>
+                    <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#4a4a4a] hidden sm:block">:</div>
+                    <div class="text-center">
+                        <div class="font-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#b8860b]" id="seconds">0</div>
+                        <div class="text-xs sm:text-sm md:text-base uppercase tracking-wider mt-1 sm:mt-2 text-[#4a4a4a]">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="bg-[#3b6255] text-stone-100 py-12 sm:py-16 md:py-24">
+        <div class="max-w-lg mx-auto text-center px-6 sm:px-8">
+            <h2 class="font-title text-3xl sm:text-4xl tracking-widest uppercase mb-8 sm:mb-12">Confirmanos tu asistencia</h2>
+            <a href="https://forms.gle/shLk9m9b5k8riHRLA" target="_blank"
+            class="mt-4 bg-[#065f46] text-[#f9fafb] px-8 sm:px-12 py-2.5 sm:py-3 text-sm sm:text-base font-button hover:bg-[#b8860b] hover:text-[#1f2937] transition-all duration-500 inline-block">
+                Completar formulario
+            </a>
+            <p class="mt-4 sm:mt-6 text-sm sm:text-base opacity-70">Antes del 20/12</p>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section class="py-12 sm:py-16 md:py-24 shadow-overlay">
+        <div class="max-w-lg mx-auto text-center px-6 sm:px-8">
+            <h2 class="font-title text-3xl sm:text-4xl tracking-widest text-[#b8860b] uppercase mb-8 sm:mb-12">Regalos</h2>
+            <div class="space-y-2 sm:space-y-3 text-sm sm:text-base md:text-lg text-[#4a4a4a] leading-relaxed opacity-90">
+                <p>Datos de la cuenta de Mercado Pago</p>
+                <p>CUIT | 20-36528577-3</p>
+                <p>Nombre y Apellido | Franco Nazareth Koruk</p>
+                <p>Alias | miliyfranco.mp</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="bg-[#3b6255] text-stone-100 py-12 sm:py-16 md:py-24">
+        <div class="max-w-lg mx-auto text-center px-6 sm:px-8">
+            <h2 class="font-title text-3xl sm:text-4xl tracking-widest uppercase mb-8 sm:mb-12">Hoteles</h2>
+            <div class="space-y-6 sm:space-y-8 md:space-y-10 text-sm sm:text-base">
+                <div>
+                    <p class="text-base sm:text-lg font-medium">Pilar Norte. Departamentos</p>
+                    <p class="opacity-70 text-sm sm:text-base md:text-lg mt-1">Avenida Sargento Cayetano Beliera 3851, La Lonja</p>
+                    <a href="https://hotels.cloudbeds.com/reservation/qYV5yF" 
+                    class="opacity-80 border-b-2 border-transparent transition-all duration-300 ease-in-out text-sm sm:text-base md:text-lg inline-block mt-2">
+                        Link a su sitio web 
+                    </a>
+                </div>
+                
+                <div>
+                    <p class="text-base sm:text-lg font-medium">Casa Campus Pilar</p>
+                    <p class="opacity-70 text-sm sm:text-base md:text-lg mt-1">Las Araucarias 1876, Pilar | Mariano Acosta 1650, Pilar</p>
+                    <a href="https://www.casacampuspilar.com/" 
+                    class="opacity-80 border-b-2 border-transparent transition-all duration-300 ease-in-out text-sm sm:text-base md:text-lg inline-block mt-2">
+                    Link a su sitio web
+                    </a>
+                </div>
+                
+                <div>
+                    <p class="text-base sm:text-lg font-medium">Sheraton Pilar Hotel & Convention Center</p>
+                    <p class="opacity-70 text-sm sm:text-base md:text-lg mt-1">Panamericana KM 49,5, Pilar</p>
+                    <a href="https://www.sheraton-pilar.com.ar/" 
+                    class="opacity-80 border-b-2 border-transparent transition-all duration-300 ease-in-out text-sm sm:text-base md:text-lg inline-block mt-2">
+                    Link a su sitio web
+                    </a>
+                </div>
+                
+                <div>
+                    <p class="text-base sm:text-lg font-medium">ibis Pilar</p>
+                    <p class="opacity-70 text-sm sm:text-base md:text-lg mt-1">Las Magnolias 533, Km 50 Ramal Pilar, Pilar</p>
+                    <a href="https://all.accor.com/hotel/8646/index.en.shtml" 
+                    class="opacity-80 border-b-2 border-transparent transition-all duration-300 ease-in-out text-sm sm:text-base md:text-lg inline-block mt-2">
+                    Link a su sitio web
+                    </a>
+                </div>
+                
+                <div>
+                    <p class="text-base sm:text-lg font-medium">Kos Pilar Hotel</p>
+                    <p class="opacity-70 text-sm sm:text-base md:text-lg mt-1">Rua Caamaño 1370, Complejo Vohe, RN 8 - KM 46,5 Ramal Pilar, Pilar</p>
+                    <a href="https://www.kospilarhotel.com/"
+                    class="opacity-80 border-b-2 border-transparent transition-all duration-300 ease-in-out text-sm sm:text-base md:text-lg inline-block mt-2">
+                    Link a su sitio web
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- <CHANGE> Removed gaps and padding from carousel to show only complete images -->
+    <section class="py-12 sm:py-16 md:py-24 shadow-overlay">
+        <div class="max-w-5xl mx-auto text-center px-4 sm:px-6 md:px-8">
+            <h2 class="font-title text-3xl sm:text-4xl tracking-widest uppercase mb-8 sm:mb-12 text-[#b8860b]">Algunos momentos</h2>
+                <div class="relative flex items-center justify-center">
+                <button onclick="prevSlide()" class="text-[#3b6255] px-2 sm:px-3 md:px-4 py-2 sm:py-3 hover:text-[#344e41] transition-all duration-300 mr-2 sm:mr-4 md:mr-6 flex-shrink-0 z-10 text-2xl sm:text-3xl md:text-4xl">
+                    &#10094;
+                </button>
+                
+                <!-- Contenedor del carousel -->
+                <div class="overflow-hidden flex-1">
+                    <!-- <CHANGE> Removed gap classes and padding from images so only complete images are visible -->
+                        <div id="carousel" class="flex transition-transform duration-500 ease-in-out gap-4">
+                        <!-- Carousel images: aumentar tamaño -->
+                        <img src="public/WhatsApp Image 2025-10-05 at 20.35.05 (1).jpeg" alt="Foto 1" 
+                        class="w-full sm:w-2/3 lg:w-1/2 flex-shrink-0 cursor-pointer object-cover hover:opacity-90 transition-opacity" onclick="openModal(0)">
+                        <img src="public/WhatsApp Image 2025-10-05 at 20.35.05.jpeg" alt="Foto 2" 
+                        class="w-full sm:w-2/3 lg:w-1/2 flex-shrink-0 cursor-pointer object-cover hover:opacity-90 transition-opacity" onclick="openModal(1)">
+                        <img src="public/WhatsApp Image 2025-10-05 at 20.35.06 (1).jpeg" alt="Foto 3" 
+                        class="w-full sm:w-2/3 lg:w-1/2 flex-shrink-0 cursor-pointer object-cover hover:opacity-90 transition-opacity" onclick="openModal(2)">
+                        <img src="public/WhatsApp Image 2025-10-05 at 20.35.06.jpeg" alt="Foto 4" 
+                        class="w-full sm:w-2/3 lg:w-1/2 flex-shrink-0 cursor-pointer object-cover hover:opacity-90 transition-opacity" onclick="openModal(3)">
+                        <img src="public/WhatsApp Image 2025-10-05 at 20.56.22.jpeg" alt="Foto 5" 
+                        class="w-full sm:w-2/3 lg:w-1/2 flex-shrink-0 cursor-pointer object-cover hover:opacity-90 transition-opacity" onclick="openModal(4)">
+                    </div>
+                </div>
+                
+                <button onclick="nextSlide()" class="text-[#3b6255] px-2 sm:px-3 md:px-4 py-2 sm:py-3 hover:text-[#344e41] transition-all duration-300 ml-2 sm:ml-4 md:ml-6 flex-shrink-0 z-10 text-2xl sm:text-3xl md:text-4xl">
+                    &#10095;
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-[#1f2937] bg-opacity-90 hidden items-center justify-center z-50 p-4">
+        <span class="absolute top-4 sm:top-6 md:top-10 right-4 sm:right-6 md:right-10 text-gray-300 text-3xl sm:text-4xl cursor-pointer hover:text-white transition-colors" onclick="closeModal()">&times;</span>
+        
+        <!-- Flechas de navegación en modal -->
+        <button onclick="prevModalImage()" class="absolute left-2 sm:left-4 md:left-10 text-gray-300 text-3xl sm:text-4xl md:text-5xl hover:text-white transition-colors px-2 sm:px-3 md:px-5 py-2 sm:py-3">
+            &#10094;
+        </button>
+        
+        <img id="modalImage" class="max-h-[90%] sm:max-h-[95%] max-w-[90%] sm:max-w-[95%] rounded-none">
+        
+        <button onclick="nextModalImage()" class="absolute right-2 sm:right-4 md:right-10 text-gray-300 text-3xl sm:text-4xl hover:text-white transition-colors px-2 sm:px-3 md:px-5 py-2 sm:py-3">
+            &#10095;
+        </button>
+    </div>
+
+    <script>
+        // Countdown Timer
+        const weddingDate = new Date('2026-02-07T00:00:00').getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+            
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<p class="font-title text-xl sm:text-2xl">¡El gran día ha llegado!</p>';
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        let currentSlide = 0;
+        const carousel = document.getElementById('carousel');
+        const totalImages = carousel.children.length;
+
+
+        let currentModalIndex = 0;
+
+        // <CHANGE> Fixed carousel to show complete images without partial views
+            function getSlideWidth() {
+            // Mobile: 100%, Tablet: 66.66% (2/3), Desktop: 50%
+            if (window.innerWidth < 640) return 100;
+            if (window.innerWidth < 1024) return 66.66;
+            return 50;
+        }
+
+        function getSlideWidth() {
+            const gap = 16; // px, equivalente a gap-4
+            const containerWidth = carousel.parentElement.offsetWidth;
+            let slideWidth;
+
+            if (window.innerWidth < 640) {
+                slideWidth = containerWidth; // mobile 100%
+            } else if (window.innerWidth < 1024) {
+                slideWidth = containerWidth * 2/3; // tablet 2/3
+            } else {
+                slideWidth = containerWidth / 2; // desktop 1/2
+            }
+
+            return slideWidth + gap; // sumar gap para que no se vea la anterior
+        }
+
+        function updateCarousel() {
+            const slideWidth = getSlideWidth();
+            carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalImages) % totalImages;
+            updateCarousel();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalImages;
+            updateCarousel();
+        }
+
+        // Reset carousel position on window resize
+        window.addEventListener('resize', updateCarousel);
+
+        const carouselImages = [
+            "public/WhatsApp Image 2025-10-05 at 20.35.05 (1).jpeg",
+            "public/WhatsApp Image 2025-10-05 at 20.35.05.jpeg",
+            "public/WhatsApp Image 2025-10-05 at 20.35.06 (1).jpeg",
+            "public/WhatsApp Image 2025-10-05 at 20.35.06.jpeg",
+            "public/WhatsApp Image 2025-10-05 at 20.56.22.jpeg"
+        ];
+
+        function openModal(index) {
+            currentModalIndex = index;
+            document.getElementById('modal').classList.remove('hidden');
+            document.getElementById('modal').classList.add('flex');
+            document.getElementById('modalImage').src = carouselImages[currentModalIndex];
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.getElementById('modal').classList.remove('flex');
+        }
+
+        function nextModalImage() {
+            currentModalIndex = (currentModalIndex + 1) % carouselImages.length;
+            document.getElementById('modalImage').src = carouselImages[currentModalIndex];
+        }
+
+        function prevModalImage() {
+            currentModalIndex = (currentModalIndex - 1 + carouselImages.length) % carouselImages.length;
+            document.getElementById('modalImage').src = carouselImages[currentModalIndex];
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+    
+    <!-- Footer -->
+    <section class="py-12 sm:py-16 md:py-24 bg-[#3b6255] shadow-overlay">
+        <div class="max-w-lg mx-auto text-center px-6 sm:px-8">
+            <h3 class="font-title text-2xl sm:text-3xl md:text-4xl text-white tracking-wider">¡Gracias por acompañarnos!</h3>
+        </div>
+    </section>
+
+</body>
+</html>
